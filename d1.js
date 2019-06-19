@@ -18,11 +18,14 @@ var max = checkGrades.reduce(function (prev, current) {
  
  
 
- var avg = checkGrades.reduce(function (prev) {
-    return ((prev + checkGrades.prosek) / checkGrades.length) ? prev : checkGrades.length
- });
+ var sum = 0;
+ for(var i = 0; i < checkGrades.length; i++) {
+	sum += checkGrades[i].prosek
+ }
+ 
+ var result = sum / checkGrades.length;
+
  
  console.log(max);
  console.log(min);
- console.log(avg);
- 
+ console.log(result);
