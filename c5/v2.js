@@ -8,7 +8,7 @@ var routes = {
         {route: '/students,', func: storeStudent},
     ],
     put: [
-        {route: '/students/:id,', updateStudent},
+        {route: '/students/:id,', func: updateStudent},
     ],
     patch: [
         {route: '/students/:id,', func: patchStudent},
